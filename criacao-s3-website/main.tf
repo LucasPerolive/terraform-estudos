@@ -1,6 +1,9 @@
+# Configurações do Terraform
 terraform {
+  # Versão requerida do terraform
   required_version = ">= 1.3.0"
 
+  # Versão requerida do provedor
   required_providers {
     aws = {
       source  = "hashicorp/aws"
@@ -9,6 +12,7 @@ terraform {
   }
 }
 
+# Configuração do provedor
 provider "aws" {
   region = "sa-east-1"
 
