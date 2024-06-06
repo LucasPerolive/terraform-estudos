@@ -1,2 +1,4 @@
-# terraform-estudos
-Códigos de Terraform criados para estudos.
+# Terraform Estudos
+Os códigos encontrados aqui são apenas para estudos.
+
+
