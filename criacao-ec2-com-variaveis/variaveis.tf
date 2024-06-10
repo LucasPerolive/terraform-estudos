@@ -24,8 +24,8 @@ locals {
         sudo apt update
         sudo apt-get install apache2 -y
         sudo rm /var/www/html/index.html
-        sudo git clone https://github.com/LucasPerolive/Barbearia-Alura.git
-        sudo mv ./Barbearia-Alura/* /var/www/html/
+        sudo git clone https://github.com/LucasPerolive/exemplo-web.git
+        sudo mv ./pagina/* /var/www/html/
         systemctl restart apache2
     EOF
 }
