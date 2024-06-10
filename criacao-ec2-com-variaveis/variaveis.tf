@@ -1,7 +1,12 @@
 # Esse código faz as seguintes ações:
 #  1 - Cria a variável com a região
-#  2 - Cria a variável com o meu ip público
-#  3 - Cria o script para instalar o apache e importar a página web do git
+#  2 - Cria a variável com o escopo de rede da VPC
+#  3 - Cria a variável com o escopo de rede da subnet
+#  4 - Cria a variável com a zona que será criada a subnet
+#  5 - Cria a variável com o meu ip público
+#  6 - Cria a variável com o flavor da máquina
+#  7 - Cria a variável com a chave-par será usada
+#  8 - Cria o script para instalar o apache e importar a página web do git
 
 # Variável com o valor da região
 variable "region" {
@@ -10,11 +15,46 @@ variable "region" {
   default     = "sa-east-1"
 }
 
+# Define o escopo de rede da VPC
+variable "ip-vpc" {
+    type = string
+    description = "IP da VPC"
+    default = "10.0.0.0/16"
+}
+
+# Define o escopo de rede da subnet
+variable "ip-subnet-1" {
+  type = string
+  description = "Ip da subnet publica"
+  default = "10.0.1.0/24"
+}
+
+# Define a zona que será criada a subnet
+variable "AZ1" {
+  type = string
+  description = "Define a zona 1a"
+  default = "sa-east-1a"
+}
+
 # Variável com o valor do ip do meu ip público
 variable "meu-ip" {
     type = string
     description = "Meu IP para fazer o acesso"
     default = "201.40.57.206/32"
+}
+
+# Define o flavor da máquina
+variable "flavor" {
+  type = string
+  description = "Define o falvor da instância"
+  default = "t2.micro"
+}
+
+# Define qual chave-par será usada
+variable "chave" {
+    type = string
+    description = "Chave-par que será usada"
+    default = "chave_de_acesso"
 }
 
 # Script para instalar o apache e importar a página web do git

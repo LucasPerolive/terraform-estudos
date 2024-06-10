@@ -3,5 +3,5 @@
 
 # Nome da chave previamente criada pelo console
 data "aws_key_pair" "chave" {
-    key_name = "chave_de_acesso"
+    key_name = var.chave
 }

@@ -4,7 +4,7 @@
 
 resource "aws_instance" "web" {
   ami           = data.aws_ami.ubuntu.id
-  instance_type = "t2.micro"
+  instance_type = var.flavor
   subnet_id = aws_subnet.projeto.id
   security_groups = [
     aws_security_group.projeto.id
