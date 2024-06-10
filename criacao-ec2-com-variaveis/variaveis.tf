@@ -1,4 +1,4 @@
-# Esse código faz as seguintes ações:
+mplo# Esse código faz as seguintes ações:
 #  1 - Cria a variável com a região
 #  2 - Cria a variável com o meu ip público
 #  3 - Cria o script para instalar o apache e importar a página web do git
@@ -25,7 +25,7 @@ locals {
         sudo apt-get install apache2 -y
         sudo rm /var/www/html/index.html
         sudo git clone https://github.com/LucasPerolive/exemplo-web.git
-        sudo mv ./pagina/* /var/www/html/
+        sudo mv ./exemplo-web/pagina/* /var/www/html/
         systemctl restart apache2
     EOF
 }
