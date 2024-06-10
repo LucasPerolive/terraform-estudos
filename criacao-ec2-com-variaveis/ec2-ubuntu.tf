@@ -5,9 +5,9 @@
 resource "aws_instance" "web" {
   ami           = data.aws_ami.ubuntu.id
   instance_type = var.flavor
-  subnet_id = aws_subnet.projeto.id
+  subnet_id = aws_subnet.projeto-subnet-1.id
   security_groups = [
-    aws_security_group.projeto.id
+    aws_security_group.projeto-sg.id
   ]
   key_name = data.aws_key_pair.chave.key_name
   associate_public_ip_address = true
