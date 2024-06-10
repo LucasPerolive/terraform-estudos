@@ -1,5 +1,8 @@
 # Criação de um S3 na AWS e Configuração para Site Estático
 
+![ambiente](ambiente.png)
+
+
 ## Pré-requisitos
 
 ### Ferramentas Necessárias
