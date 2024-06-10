@@ -4,9 +4,10 @@
 #  3 - Cria a variável com o escopo de rede da subnet
 #  4 - Cria a variável com a zona que será criada a subnet
 #  5 - Cria a variável com o meu ip público
-#  6 - Cria a variável com o flavor da máquina
-#  7 - Cria a variável com a chave-par será usada
-#  8 - Cria o script para instalar o apache e importar a página web do git
+#  6 - Cria a variável com o ip mais permissivo
+#  7 - Cria a variável com o flavor da máquina
+#  8 - Cria a variável com a chave-par será usada
+#  9 - Cria o script para instalar o apache e importar a página web do git
 
 # Variável com o valor da região
 variable "region" {
