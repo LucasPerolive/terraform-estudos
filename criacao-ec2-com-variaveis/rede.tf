@@ -73,18 +73,18 @@ resource "aws_vpc_security_group_ingress_rule" "regra-2-entrada" {
   from_port         = 80
   to_port           = 80
   ip_protocol       = "tcp"
-  cidr_ipv4         = var.meu-ip
+  cidr_ipv4         = var.permissivo-ip
 }
 resource "aws_vpc_security_group_ingress_rule" "regra-3-entrada" {
   security_group_id = aws_security_group.projeto-sg.id
   from_port         = 443
   to_port           = 443
   ip_protocol       = "tcp"
-  cidr_ipv4         = var.meu-ip
+  cidr_ipv4         = var.permissivo-ip
 }
 
 resource "aws_vpc_security_group_egress_rule" "regra-1-saida" {
   security_group_id = aws_security_group.projeto-sg.id
   ip_protocol       = "-1"
-  cidr_ipv4         = "0.0.0.0/0"
+  cidr_ipv4         = var.permissivo-ip
 }
