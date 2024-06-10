@@ -43,6 +43,13 @@ variable "meu-ip" {
     default = "201.40.57.206/32"
 }
 
+# Variável com o IP mais permissivo
+variable "permissivo-ip" {
+    type = string
+    description = "Meu IP para fazer o acesso"
+    default = "0.0.0.0/0"
+}
+
 # Define o flavor da máquina
 variable "flavor" {
   type = string
