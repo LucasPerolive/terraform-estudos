@@ -1,4 +1,4 @@
-mplo# Esse código faz as seguintes ações:
+# Esse código faz as seguintes ações:
 #  1 - Cria a variável com a região
 #  2 - Cria a variável com o meu ip público
 #  3 - Cria o script para instalar o apache e importar a página web do git
