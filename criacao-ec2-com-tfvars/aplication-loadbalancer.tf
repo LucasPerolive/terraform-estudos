@@ -14,7 +14,7 @@ resource "aws_lb_target_group" "tg_site" {
   port = 80
   protocol = "HTTP"
   vpc_id = aws_vpc.vpc_site.id
-  load_balancing_algorithm_type = "round_robin"
+  load_balancing_algorithm_type = "least_outstanding_requests"
 }
 
 resource "aws_lb_target_group_attachment" "conexao_tg_site" {
