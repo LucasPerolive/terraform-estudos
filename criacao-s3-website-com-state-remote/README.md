@@ -1,4 +1,4 @@
-# Criação de um S3 na AWS e Configuração para Site Estático
+# Criação de um S3 na AWS com Configuração para Site Estático e State Remote
 
 ![ambiente](ambiente.png)
 
