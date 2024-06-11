@@ -10,6 +10,10 @@
 1. **AWS CLI**: Instalada e configurada com as credenciais (Access Key e Secret Key) do usuário.
 2. **Terraform**: Instalada para gerenciar a infraestrutura como código.
 
+### Recursos criados
+
+1. Um S3 para ser usado como repositório do state. Crie um com o comando `aws s3 mv s3://<bucket-name>`
+
 ## Configuração da AWS CLI
 Execute o comando abaixo para configurar a AWS CLI com suas credenciais:
 
