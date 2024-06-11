@@ -32,3 +32,7 @@ resource "aws_lb_listener" "listener_http" {
     target_group_arn = aws_lb_target_group.tg_site.arn
   }
 }
+
+output "url_alb" {
+  value = aws_lb.alb_site.dns_name
+}
