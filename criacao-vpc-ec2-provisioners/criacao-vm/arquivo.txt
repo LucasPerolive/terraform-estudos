@@ -1,0 +1,1 @@
+Esse arquivo foi copiado do local para a ec2!
