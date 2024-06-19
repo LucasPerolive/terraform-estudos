@@ -5,7 +5,7 @@
 
 # define qual a chave que sera usada
 resource "aws_key_pair" "key" {
-  key_name = "aws_key-15299298901"
+  key_name = "aws_key-ZZZZZ"
   public_key = file("../chaves/aws-key.pub")
 }
 
