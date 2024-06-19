@@ -15,9 +15,9 @@ terraform {
   }
 
   backend "s3" {
-    bucket = "terraform-state-remote-15299298901"
+    bucket = "XXXXXXXX"
     key    = "documentacao/criacao-vpc/terraform.tfstate"
-    region = "sa-east-1"
+    region = "YYYYY"
   }
 }
 
